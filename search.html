@@ -1,0 +1,92 @@
+<!--1902710-->
+<!doctype html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+	   <meta name="catalogue" content="games catalogue">
+	     <title>Zentona - Game Store </title>
+	   <link rel="stylesheet" type="text/css" href="login.css">
+   </head>
+
+
+
+
+  <!--main body of the website-->
+<body>
+<div class="background" style="background-image: url('background.jpg');">
+  
+  <!--navigation -->
+<nav>
+  <div class="nav" align="center"> 
+  <h1 class="title"> Zentona - Game Store </h1> 
+    <a href="index.html">Store</a>
+	  <a href="wishlist.html">Wishlist</a>
+	  <a href="contact1.html">Contact Us</a>
+	  <a href="login.html">Login/Signup</a>
+	  <a href="search.html">Search</a>
+    </div>
+</nav>
+<div class="search" >
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..">
+	   <ul id="myUL">
+           <li><a href="borderlands.html">Borderlands 3</a></li>
+           <li><a href="ac.html">Assassins Creed</a></li>
+           <li><a href="cod.html">Call of Duty</a></li>
+           <li><a href="factorio.html">Factorio</a></li>
+		   <li><a href="fallout.html">Fallout 4</a></li>
+           <li><a href="overwatch.html">Overwatch</a></li>
+          <li><a href="spiderman.html">Spiderman</a></li>
+		  <li><a href="subnatica.html">Subnautica</a></li>
+		  <li><a href="witcher.html">Witcher 3</a></li>
+		  <li><a href="civ.html">Sid Meier's Civilization V: Brave New World</a></li>
+		  <li><a href="crusader.html">Crusader Kings II</a></li>
+		  <li><a href="warcraft.html">Warcraft III: Reforged</a></li>
+		  <li><a href="else.html">Else Heart.Break()</a></li>
+		  <li><a href="shadowrun.html">Shadowrun: Dragonfall</a></li>
+		  <li><a href="stardew.html">Startdew Valley</a></li>
+		  <li><a href="disco.html">Disco Elysium</a></li>
+		  <li><a href="rim.html">Rimworld</a></li>
+		  
+		  <li><a href="siege.html">Tom Clancy's Rainbow Six Siege</a></li>
+		  <li><a href="truck.html">Euro Truck Simulator 2</a></li>
+		  <li><a href="farmsim.html">Farming Simulator 19</a></li>
+		  <li><a href="trainsim.html"> Train Simulator 2020</a></li>
+		  <li><a href="zomboid.html">Project Zomboid</a></li>
+		  <li><a href="shadowrunreturns.html">Shadowrun Returns</a></li>
+		  <li><a href="Shadowrunhong.html">Sahdowrun: Hong Kong</a></li>
+		  <li><a href="cavestory.html">Cave Story+</a></li>
+		  <li><a href="Socery.html">Sorcery! Parts 1 & 2</a></li>
+		  <li><a href="dwarf.html">Dwarf Fortress</a></li>
+       </ul>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+</div>
+<br>
+</body>
+<footer>
+<div class="footer" align="center">
+    <br>
+    &copy;&nbsp Copyright 2020 M.M 
+</div>
+
+</div>	
+</footer>
+
+</html>

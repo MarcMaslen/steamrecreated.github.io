@@ -1,0 +1,447 @@
+
+* {
+  box-sizing: border-box;
+  margin:0px;
+}
+
+
+
+
+/*------------------+
+Navagation section  |
+-------------------*/
+.nav {
+  background-color: #333;
+  overflow: hidden;
+  
+}
+
+.nav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.title {
+	font-family:Comic Sans MS;
+    color:#ffffff;
+	display: inline-block;
+}
+
+
+/*---------------+
+Game Containers  |
+----------------*/
+.h1{
+	color:#f2f2f2;
+	text-decoration:underline;
+	font-family:Comic Sans MS, Comic Sans, cursive;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  height: auto;
+  padding: 5px;
+  display: block;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  position: relative;
+  width: 31%;
+  background-color: grey;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top:10px;
+  display: flex;
+}
+
+.image {
+  display: inline-block;
+  width: 25%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  opacity: 0.9;
+}
+
+.column:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  font-style: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sellers {
+	color:#f2f2f2;
+	text-decoration:underline;
+	font-family:Comic Sans MS, Comic Sans, cursive;
+	margin-left:10px;
+}
+
+/*-------------+
+ Game Slider   |
+ -------------*/
+
+.slider {
+	width: 65%;
+	height: auto;
+	display: flex;
+	float: center;
+	position:relative;
+    margin-left:320px;
+    margin-right:200px;
+	border-style: ridge;
+	border-width: 20px;
+	box-shadow: 10px 10px ;
+	
+}
+
+.slider-button1 {
+	position:absolute;
+	bottom:0;
+	left:0;
+	top:0;
+}
+
+.slider-button2 {
+	position:absolute;
+	bottom:0;
+	right:0;
+	top:0;
+}
+
+
+
+
+
+/*-----------+
+ Background  |
+ -----------*/
+.background {
+	position: absolute;
+	height: auto;
+	margin-bottom: 50px;
+
+}
+
+
+/*------------+
+Game Pages    |
+-------------*/
+.description {
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 20px;
+	display: inline-block;
+}
+
+
+
+
+
+/*--------------------+
+Side of page          |
+---------------------*/
+.side {
+	padding:20px;
+	color:#f2f2f2;
+	float:left;
+	text-decoration:underline ;
+	font-family:Comic Sans MS, Comic Sans, cursive;
+}
+
+.side a {
+	color: #f2f2f2;
+	font-family:Comic Sans MS, Comic Sans, cursive;
+}
+	
+
+
+/*--------------+
+Game pages      |
+---------------*/
+.gamepic {
+	max-width: 40%;
+	max-height: 40%;
+	display: inline-block;
+	border-style: ridge;
+	border-width: 20px;
+	
+}
+
+.gamebutton {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.gamebutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.gamebutton:hover span {
+  padding: 4px;
+}
+
+.gamebutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.middle {
+	display: inline-block;
+	
+	
+}
+.s2{
+	max-width: 48%;
+	display: inline-block;
+}
+
+.reviews {
+	padding: 4px;
+	border: 5px;
+	border-radius: 5px;
+	margin-left:20px;
+	
+}
+
+
+
+/*------------+
+Footer        |
+-------------*/
+
+footer {
+    position: fixed;
+    height: 50px;
+    background-color: white;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+	
+    margin-bottom: 0px;
+	clear: both;
+	
+}
+.footer1 {
+	position: fixed;
+    height: 50px;
+    background-color: white;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+	clear: both;
+	
+    
+}
+
+
+/*-------------+
+contact page    |
+--------------*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact h3{
+	color: white;
+	font-size:25px;
+	text-decoration:underline;
+}
+
+.contact {
+  border-radius: 5px;
+  padding: 20px;
+  color:white;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/*-------------------+
+       sign up       |
+--------------------*/
+
+.signup h1{
+	font-size:25px;
+	
+}
+
+
+.form {
+  position: relative;
+  z-index: 0;
+  background: #FFFFFF;
+  max-width: 560px;
+  margin-left: 425px;
+  margin-top:1120px;
+  margin-bottom:80px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 10px 10px ;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin: 15px 0 0;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+
+
+/*--------------+
+ store page     |
+ --------------*/
+ 
+ .h1{
+	color:#f2f2f2;
+	text-decoration:underline;
+	font-family:Comic Sans MS, Comic Sans, cursive;
+}
+
+
+
+
+.column1 {
+  float: left;
+  height: auto;
+  padding: 5px;
+  display: block;
+  position: relative;
+  width: 25%;
+  background-color: white;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  box-shadow: 10px 10px ;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  opacity: 0.9;
+}
+
+.column1:hover .overlay1 {
+  bottom: 0;
+  height: 100%;
+}
+
+.cover1 {
+	margin-left:300px;
+	z-index:0;
+	height: auto;
+	
+	
+	
+}
